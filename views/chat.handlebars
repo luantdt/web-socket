@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="shadow p-4 form-login" id="form-login">
+        <div class="title">
+            LOGIN
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-outline-primary" onclick="loginUser(this)">User1</button>
+            <button type="button" class="btn btn-outline-primary" onclick="loginUser(this)">User2</button>
+            <button type="button" class="btn btn-outline-primary" onclick="loginUser(this)">User3</button>
+            <button type="button" class="btn btn-outline-primary" onclick="loginUser(this)">User4</button>
+            <button type="button" class="btn btn-outline-primary" onclick="loginUser(this)">User5</button>
+            <button type="button" class="btn btn-outline-primary" onclick="loginUser(this)">User6</button>
+        </div>
+    </div>
+    <div class="container mt-5" id="form-chat">
+        <div class="col-12 title text-center">
+            CHAT WEB
+        </div>
+        <div class="col-12 btn text-center">
+            <button type="button" class="btn btn-primary" onclick="showFormCreate()"><i class="bi bi-plus-lg"></i> Create Room</button>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 cont-acc" id="cont-acc">
+                
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 border border-3 chat rounded">
+                <div class="col-12 mess p-3" id="mess">
+                </div>
+                <div class="col-12 send">
+                    <div class="input-group">
+                        <input id="messages" type="text" class="form-control" placeholder="your messages" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-info" type="button" id="btn-send-messages" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="blur">
+    <div class="form-create p-5 shadow-lg p-3 mb-5 bg-body rounded" id="form-create">
+        <button type="button" class="btn-close" aria-label="Close" onclick="closeFormCreate()"><i class="bi bi-x-lg"></i></button>
+        <div class="title text-center">
+            Create Room
+        </div>
+        <div class="col-12 position-relative mb-3">
+            <label for="rn" class="form-label">Room name</label>
+            <input type="text" class="form-control" id="rn" placeholder="Enter room name">
+        </div>
+        <div class="checkbox ml-5">
+            Users:<br>
+            <input type="checkbox" id="us1" name="Users" value="User1" checked>
+            <label for="us1"> User1</label><br>
+            <input type="checkbox" id="us2" name="Users" value="User2">
+            <label for="us2"> User2</label><br>
+            <input type="checkbox" id="us3" name="Users" value="User3">
+            <label for="us3"> User3</label><br>
+            <input type="checkbox" id="us4" name="Users" value="User4">
+            <label for="us4"> User4</label><br>
+            <input type="checkbox" id="us5" name="Users" value="User5">
+            <label for="us5"> User5</label><br>
+            <input type="checkbox" id="us6" name="Users" value="User6">
+            <label for="us6"> User6</label><br>
+        </div>
+        <div class="col-12 text-center">
+            <button type="button" class="btn btn-success" onclick="createRoom()">Create</button>
+        </div>
+        
+    </div>
+</div>

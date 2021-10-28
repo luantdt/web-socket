@@ -1,0 +1,80 @@
+
+.form-login {
+    text-align: center;
+    margin:200px 0;
+}
+.title {
+    font-weight: bolder;
+    font-size: 40px;
+    margin: 10px;
+}
+.checked {
+    background-color: #17a2b8;
+}
+.acc {
+    background-color: rgb(22, 161, 22);
+}
+.font {
+    font-size: large;
+}
+.chat {
+    height: 650px;
+}
+.mess {
+    height: 600px;
+    overflow: scroll;
+    display: flex; 
+    flex-direction: column;
+}
+.item-message {
+    max-width: 90%;
+    word-wrap: break-word;
+    background: #ccc;
+    margin: 3px auto 3px 3px;
+    border-radius: 10px 10px 10px 0;
+    padding: 8px;
+}
+.current-user {
+    background: #004db2;
+    margin: 3px 3px 3px auto;
+    border-radius: 10px 10px 0 10px;
+    padding: 8px;
+    color: #fff;   
+}
+#form-chat{
+    visibility: hidden;
+}
+.cont-acc {
+    height: 650px;
+    overflow: scroll;
+}
+.cont-acc i{
+    font-size: 30px;
+}
+.online {
+    color:green;
+}
+.sts {
+    font-size: 15px;
+}
+.blur {
+    position: fixed;
+    background-color: rgba(0,0,0, 0.6);
+    width: 100%;
+    height: 100%;
+    top:0px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    visibility: hidden;
+}
+.form-create {
+    background-color: #fff;
+    width: 1000px;
+}
+.btn-close {
+    background-color: #fff;
+    border: none;
+    font-size: larger;
+}
