@@ -5,6 +5,7 @@ const port = 3000;
 const expressHandlebars = require('express-handlebars');
 const http = require('http');
 const server = http.createServer(app);
+
 var io = require('socket.io')(server);
 var userArray = [];
 let db_chat = [];

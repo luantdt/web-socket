@@ -57,10 +57,8 @@ socket.on("login-successfull",function(data){
 })
 socket.on("get-db-room",function(data){
     let msg = "";
-    console.log(data);
     if(data.length > 0 ) {
         msg = data[0].msgs.map(item => {
-            console.log(item);
             if(item.from == user) {
                 return `<div class="item-message current-user">${item.msg}</div>`
             } else {
@@ -91,7 +89,6 @@ socket.on("private messages", (data) => {
     if (data.to == user && data.from == curr_user) {
         $("#mess").append(`<div class="item-message">${data.msg}</div>`)
     }
-    console.log(data.from);
 })
 socket.on("gruop-messages", function(data) {
     if (curr_user == data.to) {
